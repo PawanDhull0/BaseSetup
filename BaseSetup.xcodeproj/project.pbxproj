@@ -13,6 +13,9 @@
 		1FF5AD94275A0737006CD930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AD92275A0737006CD930 /* Main.storyboard */; };
 		1FF5AD96275A073A006CD930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AD95275A073A006CD930 /* Assets.xcassets */; };
 		1FF5AD99275A073A006CD930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AD97275A073A006CD930 /* LaunchScreen.storyboard */; };
+		1FF5ADA2275A075C006CD930 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADA1275A075C006CD930 /* NetworkManager.swift */; };
+		1FF5ADA9275A083E006CD930 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADA8275A083E006CD930 /* UsersModel.swift */; };
+		1FF5ADAB275A1A6A006CD930 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5ADAA275A1A6A006CD930 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1FF5AD95275A073A006CD930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF5AD98275A073A006CD930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FF5AD9A275A073A006CD930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FF5ADA1275A075C006CD930 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1FF5ADA8275A083E006CD930 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		1FF5ADAA275A1A6A006CD930 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		1FF5AD8B275A0737006CD930 /* BaseSetup */ = {
 			isa = PBXGroup;
 			children = (
+				1FF5ADA3275A0761006CD930 /* Models */,
+				1FF5ADA0275A0741006CD930 /* NetworkManager */,
 				1FF5AD8C275A0737006CD930 /* AppDelegate.swift */,
 				1FF5AD8E275A0737006CD930 /* SceneDelegate.swift */,
 				1FF5AD90275A0737006CD930 /* ViewController.swift */,
@@ -65,6 +73,39 @@
 				1FF5AD9A275A073A006CD930 /* Info.plist */,
 			);
 			path = BaseSetup;
+			sourceTree = "<group>";
+		};
+		1FF5ADA0275A0741006CD930 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADA1275A075C006CD930 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		1FF5ADA3275A0761006CD930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADA5275A0775006CD930 /* ResponseModel */,
+				1FF5ADA4275A076B006CD930 /* RequestModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FF5ADA4275A076B006CD930 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		1FF5ADA5275A0775006CD930 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5ADA8275A083E006CD930 /* UsersModel.swift */,
+				1FF5ADAA275A1A6A006CD930 /* UserModel.swift */,
+			);
+			path = ResponseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF5ADA2275A075C006CD930 /* NetworkManager.swift in Sources */,
 				1FF5AD91275A0737006CD930 /* ViewController.swift in Sources */,
 				1FF5AD8D275A0737006CD930 /* AppDelegate.swift in Sources */,
+				1FF5ADA9275A083E006CD930 /* UsersModel.swift in Sources */,
+				1FF5ADAB275A1A6A006CD930 /* UserModel.swift in Sources */,
 				1FF5AD8F275A0737006CD930 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
